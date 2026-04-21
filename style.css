@@ -43,7 +43,7 @@ a:active {
   width: fit-content;
   height: 10rem;
   object-fit: contain;
-  transition: opacity 22s ease-out;
+  transition: opacity 25s ease-out;
 }
 
 .header-container {
