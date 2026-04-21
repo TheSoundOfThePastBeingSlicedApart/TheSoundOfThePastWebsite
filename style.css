@@ -40,10 +40,10 @@ a:active {
 }
 
 .index-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  transition: opacity 1s ease-out;
+  width: fit-content;
+  height: 10rem;
+  object-fit: contain;
+  transition: opacity 22s ease-out;
 }
 
 .header-container {
