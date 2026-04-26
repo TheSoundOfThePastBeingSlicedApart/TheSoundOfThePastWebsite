@@ -165,6 +165,37 @@ a:active {
 }
 
 @media (max-width: 768px) {
+  .index-grid {
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden;
+  }
+
+  .header-container {
+    grid-column: 1 / -1;
+    padding: 0 1rem;
+  }
+
+  .index-grid h1 {
+    font-size: 1.8rem;
+  }
+
+  .index-grid button {
+    height: 7rem;
+  }
+
+  .index-grid img.slow_fade,
+  .index-grid img.fast_fade,
+  .index-grid img.medium_fade {
+    height: 7rem;
+    max-width: fit-content;
+  }
+
+  .index-grid button:nth-of-type(2),
+  .index-grid button:nth-of-type(4),
+  .index-grid button:nth-of-type(5) {
+    display: none;
+  }
+
   .dates-container {
     flex-direction: column;
     gap: 2rem;
