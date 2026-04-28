@@ -75,8 +75,18 @@ a:active {
 }
 
 .subheader {
-  font-size: 0.8rem;
-  margin: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.subheader h1 {
+  font-size: 2rem;
+}
+
+.struck {
+  text-decoration: line-through;
 }
 
 .dates-flexbox {
