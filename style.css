@@ -8,8 +8,18 @@
   font-style: normal;
 }
 
+.background_image {
+  position: absolute;
+  z-index: -30;
+  width: 100vw;
+  height: 100vh;
+  opacity: 5%;
+  object-fit: cover;
+  filter: blur(px);
+}
+
 body {
-  background-color: black;
+  background-color: #1a1819;
   color: white;
   margin: 0;
   padding: 0;
@@ -177,9 +187,14 @@ a:active {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  font-size: 3rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+
+  font-family: 'STIX Two Text', serif;
+  font-optical-sizing: auto;
+  font-style: regular;
+  text-transform: none;
+  letter-spacing: -0.05em;
 }
 
 .daypage-leftbox {
