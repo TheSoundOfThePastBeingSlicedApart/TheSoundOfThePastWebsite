@@ -40,6 +40,7 @@ a:active {
 .index-grid img.slow_fade {
   width: fit-content;
   height: 10rem;
+  margin: 20px;
   object-fit: contain;
   transition: opacity 25s ease-out;
 }
