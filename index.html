@@ -10,57 +10,83 @@
   <body>
     <script src="script.js"></script>
     <div class="index-grid">
-      <audio id="sound5" src="public/sound5.mp3" preload="auto"></audio>
-      <audio id="sound1" src="public/sound1.mp3" preload="auto"></audio>
-      <audio id="sound4" src="public/sound4.mp3" preload="auto"></audio>
-      <audio id="sound11" src="public/sound11.mp3" preload="auto"></audio>
-      <audio id="sound8" src="public/sound8.mp3" preload="auto"></audio>
-      <audio id="sound9" src="public/sound9.mp3" preload="auto"></audio>
-      <button
-        onclick="playSound('sound5', this)"
-        style="grid-column: 1 / 1; grid-row: 3 / 3; padding: 5px"
-      >
-        <img class="fast_fade" src="public/Asset15.png" alt="Asset15" />
+      <audio id="fade5" src="public/5fade.mp3" preload="auto"></audio>
+      <audio id="fade1" src="public/1fade.mp3" preload="auto"></audio>
+      <audio id="fade4" src="public/4fade.mp3" preload="auto"></audio>
+      <audio id="fade10" src="public/10fade.mp3" preload="auto"></audio>
+      <audio id="fade8" src="public/8fade.mp3" preload="auto"></audio>
+      <audio id="fade9" src="public/9fade.mp3" preload="auto"></audio>
+      <audio id="fade2" src="public/2fade.mp3" preload="auto"></audio>
+      <audio id="fade3" src="public/3fade.mp3" preload="auto"></audio>
+      <audio id="fade6" src="public/6fade.mp3" preload="auto"></audio>
+      <audio id="fade7" src="public/7fade.mp3" preload="auto"></audio>
+
+      <button class="desktop-only" onclick="playSound('fade9', this)" style="top: 20%; left: 25%">
+        <img class="fast_fade" src="public/Asset1.png" alt="Asset8" />
       </button>
-      <button
-        onclick="playSound('sound1', this)"
-        style="grid-column: 7 / 7; grid-row: 8 / 8"
-      >
-        <img class="medium_fade" src="public/Asset7.png" alt="Asset7" />
+
+      <button onclick="playSound('fade3', this)" style="top: 10%; left: 55%">
+        <img class="fast_fade" src="public/Asset14.png" alt="Asset3" />
       </button>
-      <button
-        onclick="playSound('sound4', this)"
-        style="grid-column: 2 / 2; grid-row: 9 / 9; padding: 5px"
-      >
-        <img class="slow_fade" src="public/Asset17.png" alt="Asset17" />
+
+      <button onclick="playSound('fade4', this)" style="top: 12%; left: 18%">
+        <img class="medium_fade" src="public/Asset3.png" alt="Asset10" />
       </button>
-      <button
-        onclick="playSound('sound11', this)"
-        style="grid-column: 10 / 10; grid-row: 7 / 7"
-      >
-        <img class="medium_fade" src="public/Asset13.png" alt="Asset13" />
-      </button>
-      <button
-        onclick="playSound('sound8', this)"
-        style="grid-column: 8 / 8; grid-row: 2 / 2"
-      >
+
+      <button onclick="playSound('fade8', this)" style="top: 15%; left: 75%">
         <img class="fast_fade" src="public/Asset4.png" alt="Asset4" />
       </button>
-      <button
-        onclick="playSound('sound9', this)"
-        style="grid-column: 4 / 4; grid-row: 1 / 1; padding: 5px"
-      >
-        <img class="fast_fade" src="public/Asset8.png" alt="Asset4" />
+
+      <button onclick="playSound('fade5', this)" style="top: 25%; left: 5%">
+        <img class="fast_fade" src="public/Asset7.png" alt="Asset15" />
+      </button>
+
+      <button onclick="playSound('fade7', this)" style="top: 30%; left: 90%">
+        <img class="medium_fade" src="public/Asset6.png" alt="Asset6" />
+      </button>
+
+      <button onclick="playSound('fade2', this)" style="top: 40%; left: 20%">
+        <img class="medium_fade" src="public/Asset5.png" alt="Asset1" />
+      </button>
+
+      <button class="desktop-only" onclick="playSound('fade10', this)" style="top: 45%; left: 75%">
+        <img class="slow_fade" src="public/Asset8.png" alt="Asset12" />
+      </button>
+
+      <button onclick="playSound('fade10', this)" style="top: 60%; left: 85%">
+        <img class="medium_fade" src="public/Asset16.png" alt="Asset13" />
+      </button>
+
+      <button onclick="playSound('fade8', this)" style="top: 65%; left: 30%">
+        <img class="fast_fade" src="public/Asset10.png" alt="Asset11" />
+      </button>
+
+      <button onclick="playSound('fade1', this)" style="top: 70%; left: 65%">
+        <img class="medium_fade" src="public/Asset11.png" alt="Asset7" />
+      </button>
+
+      <button onclick="playSound('fade4', this)" style="top: 60%; left: 12%">
+        <img class="slow_fade" src="public/Asset12.png" alt="Asset17" />
+      </button>
+
+      <button onclick="playSound('fade6', this)" style="top: 70%; left: 80%">
+        <img class="fast_fade" src="public/Asset13.png" alt="Asset5" />
+      </button>
+      <button onclick="playSound('fade2', this)" style="top: 20%; left: 60%">
+        <img class="medium_fade" src="public/Asset17.png" alt="Asset5" />
+      </button>
+      <button onclick="playSound('fade10', this)" style="top: 78%; left: 54%">
+        <img class="fast_fade" src="public/Asset18.png" alt="Asset5" />
       </button>
 
       <div class="header-container">
         <h1>The Sound Of The Past Being Sliced Apart</h1>
         <div class="subheader">
-          <h1><a href="may8th.html"> 08/05 </a></h1>
+          <a href="may8th.html"><h1>08/05</h1></a>
           <h1 class="struck">15/05</h1>
           <h1 class="struck">22/05</h1>
-          <!-- <h1 class="struck"><a href="may15th.html"> 15/05 </a></h1> -->
-          <!-- <h1 class="struck"><a href="may22nd.html"> 22/05 </a></h1> -->
+          <!-- <a href="may15th.html"><h1>15/05</h1></a>
+          <a href="may22nd.html"><h1>22/05</h1></a> -->
         </div>
       </div>
     </div>

@@ -16,11 +16,10 @@ a:active {
 }
 
 .index-grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 10vh);
+  position: relative;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .index-grid a {
@@ -35,12 +34,12 @@ a:active {
   cursor: pointer;
   z-index: 10;
   height: 10rem;
+  position: absolute;
 }
 
 .index-grid img.slow_fade {
   width: fit-content;
-  height: 10rem;
-  margin: 20px;
+  height: 8rem;
   object-fit: contain;
   transition: opacity 25s ease-out;
 }
@@ -53,19 +52,29 @@ a:active {
 }
 .index-grid img.medium_fade {
   width: fit-content;
-  height: 10rem;
+  height: 7rem;
   object-fit: contain;
   transition: opacity 40s ease-out;
 }
 
 .header-container {
-  grid-column: 1 / 11;
-  grid-row: 1 / 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.header-container h1,
+.header-container .subheader {
+  pointer-events: auto;
 }
 
 .index-grid h1 {
@@ -87,7 +96,8 @@ a:active {
 }
 
 .struck {
-  text-decoration: line-through;
+  filter: blur(5px);
+  opacity: 70%;
 }
 
 .dates-flexbox {
@@ -176,13 +186,7 @@ a:active {
 }
 
 @media (max-width: 768px) {
-  .index-grid {
-    grid-template-columns: repeat(5, 1fr);
-    overflow: hidden;
-  }
-
   .header-container {
-    grid-column: 1 / -1;
     padding: 0 1rem;
   }
 
@@ -194,6 +198,10 @@ a:active {
     height: 7rem;
   }
 
+  .desktop-only {
+    display: none;
+  }
+
   .index-grid img.slow_fade,
   .index-grid img.fast_fade,
   .index-grid img.medium_fade {
@@ -201,11 +209,6 @@ a:active {
     max-width: fit-content;
   }
 
-  .index-grid button:nth-of-type(2),
-  .index-grid button:nth-of-type(4),
-  .index-grid button:nth-of-type(5) {
-    display: none;
-  }
 
   .dates-container {
     flex-direction: column;
