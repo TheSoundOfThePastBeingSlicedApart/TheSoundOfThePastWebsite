@@ -1,11 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-color: black;
   color: white;
   margin: 0;
+  padding: 0;
   font-family:
     system-ui,
     -apple-system,
     sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:visited,
@@ -13,18 +31,20 @@ a:hover,
 a:active {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .index-grid {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
 .index-grid a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .index-grid button {
@@ -69,30 +89,41 @@ a:active {
   align-items: center;
   text-align: center;
   pointer-events: none;
-  z-index: 20;
+  z-index: 30;
 }
 
 .header-container h1,
-.header-container .subheader {
+.header-container .subheader,
+.header-container a {
   pointer-events: auto;
 }
 
 .index-grid h1 {
   color: inherit;
   margin: 0;
-  font-size: 3rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
 .subheader {
-  margin-top: 2rem;
+  margin-top: 0.8rem;
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
 .subheader h1 {
-  font-size: 2rem;
+  font-size: 2.6rem;
+  font-family: 'STIX Two Text', serif;
+  font-optical-sizing: auto;
+  font-style: regular;
+  text-transform: none;
+  letter-spacing: -0.05em;
+}
+
+.subheader a:hover h1,
+.subheader h1:hover {
+  font-style: italic;
 }
 
 .struck {
@@ -146,7 +177,7 @@ a:active {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -191,11 +222,11 @@ a:active {
   }
 
   .index-grid h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .index-grid button {
-    height: 7rem;
+    height: 6rem;
   }
 
   .desktop-only {
@@ -205,10 +236,9 @@ a:active {
   .index-grid img.slow_fade,
   .index-grid img.fast_fade,
   .index-grid img.medium_fade {
-    height: 7rem;
+    height: 6rem;
     max-width: fit-content;
   }
-
 
   .dates-container {
     flex-direction: column;
@@ -219,7 +249,7 @@ a:active {
     flex-direction: column;
     align-items: start;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 2rem;
   }
 
