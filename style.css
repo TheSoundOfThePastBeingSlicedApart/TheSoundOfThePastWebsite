@@ -126,7 +126,8 @@ a:active {
   font-size: 2.6rem;
   font-family: 'STIX Two Text', serif;
   font-optical-sizing: auto;
-  font-style: regular;
+  font-style: normal;
+  font-weight: 400;
   text-transform: none;
   letter-spacing: -0.05em;
 }
@@ -149,13 +150,20 @@ a:active {
   align-items: center;
   text-decoration: none;
   color: inherit;
+  font-family: 'STIX Two Text', serif;
+  font-optical-sizing: auto;
+  font-style: regular;
+  text-transform: none;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.05em;
 }
 
 .dates-flexbox h1 {
   margin: 0;
   text-align: center;
   font-size: 3rem;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .dates-container {
@@ -170,6 +178,10 @@ a:active {
   align-items: center;
   text-decoration: none;
   color: inherit;
+}
+
+.dates-container a:hover {
+  font-style: italic;
 }
 
 .daypage-layout-one {
