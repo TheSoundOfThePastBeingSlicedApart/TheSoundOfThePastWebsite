@@ -255,6 +255,10 @@ a:active {
   display: none;
 }
 
+.coords:hover {
+  filter: brightness(150%);
+}
+
 .coordinate-hover:hover .address {
   display: none;
 }
