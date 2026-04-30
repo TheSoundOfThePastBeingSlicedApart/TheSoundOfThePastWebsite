@@ -15,12 +15,11 @@
   height: 100vh;
   opacity: 5%;
   object-fit: cover;
-  filter: blur(px);
 }
 
 body {
   background-color: #1a1819;
-  color: white;
+  color: #c8c8cb;
   margin: 0;
   padding: 0;
   font-family:
@@ -67,6 +66,15 @@ a:active {
   position: absolute;
 }
 
+.index-grid img {
+  transition: filter 0.3s ease-in-out;
+}
+
+.index-grid img:hover {
+  filter: brightness(150%);
+  /* filter: blur(2px); */
+}
+
 .index-grid img.slow_fade {
   width: fit-content;
   height: 8rem;
@@ -106,6 +114,12 @@ a:active {
 .header-container .subheader,
 .header-container a {
   pointer-events: auto;
+  transition: filter 0.2s ease-in-out;
+}
+
+.header-container h1:hover {
+  /* opacity: 60%; */
+  filter: blur(1px);
 }
 
 .index-grid h1 {
@@ -196,7 +210,7 @@ a:active {
 
 .daypage-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   font-size: 2rem;
@@ -209,11 +223,17 @@ a:active {
   letter-spacing: -0.05em;
 }
 
+.leftgap {
+  margin-left: 1rem;
+}
+
 .daypage-leftbox {
   display: flex;
   flex-direction: column;
   text-align: left;
   align-items: start;
+  margin-left: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .daypage-rightbox {
